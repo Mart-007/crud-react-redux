@@ -357,6 +357,12 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
     removeEmojiViews();
     initEmoji(emojiList);
   }
+// add emoji list
+  public void toSmileyFood(View view) {
+    String[] emojiList = {"🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓"};
+    removeEmojiViews();
+    initEmoji(emojiList);
+  }
 
   public void toKamasutraEmoji(View view) {
 //  initEmoji();
