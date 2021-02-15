@@ -28,66 +28,136 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:visibility="gone">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="#FFF"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/return_to_keys1"
-                    android:layout_marginLeft="10dp"
-                    android:paddingHorizontal="5dp"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/cancel"
-                    android:layout_gravity="center"
-                    android:text="back"
-                    android:onClick="toKeyboard"
-                    android:textColor="#000" />
-                <!--default tab                        /-->
-                <ImageButton
-                    android:id="@+id/emojiKamasutra"
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/kamasutra1"
-                    android:text="back"
-                    android:onClick="toKamasutraEmoji"
-                    android:textColor="#000" />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
 
-                <ImageButton
-                    android:id="@+id/emojiSmiley"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/smile"
-                    android:onClick="toSmileyEmoji"
-                    android:textColor="#000" />
-                <TextView
-                android:id="@+id/emojiAnimals"
-                android:layout_marginLeft="15dp"
-                android:layout_gravity="center"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:textSize="29dp"
-                android:text="🐻"
-                android:onClick="toSmileyAnimals"
-                android:textColor="#000" />
-<!--            add emoji button-->
-                <TextView
-                    android:id="@+id/emojiFood"
-                    android:layout_marginLeft="10dp"
-                    android:layout_gravity="center"
-                    android:layout_width="42dp"
-                    android:layout_height="42dp"
-                    android:textSize="29dp"
-                    android:text="🍔"
-                    android:onClick="toSmileyFood"
-                    android:textColor="#000" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/return_to_keys1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/cancel"
+                            android:onClick="toKeyboard"
+                            android:paddingHorizontal="5dp"
+                            android:text="back"
+                            android:textColor="#000" />
+                        <!--default tab                        /-->
+                        <ImageButton
+                            android:id="@+id/emojiKamasutra"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/kamasutra1"
+                            android:onClick="toKamasutraEmoji"
+                            android:text="back"
+                            android:textColor="#000" />
+
+                        <ImageButton
+                            android:id="@+id/emojiSmiley"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/smile"
+                            android:onClick="toSmileyEmoji"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/emojiAnimals"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:onClick="toSmileyAnimals"
+                            android:text="🐻"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+                        <!--            add emoji button-->
+                        <TextView
+                            android:id="@+id/emojiFood"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="🍔"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+                        ️
+
+                        <TextView
+                            android:id="@+id/emojiBall"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="⚽"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiCars"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="🚗"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiObjects"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="💡"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiSymbols"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="🎵"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
+
+                        <TextView
+                            android:id="@+id/emojiFlags"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="toSmileyFood"
+                            android:text="🏳️‍"
+                            android:textColor="#000"
+                            android:textSize="29dp" />
 
 
+                    </LinearLayout>
+
+                </HorizontalScrollView>
             </LinearLayout>
 
             <HorizontalScrollView
@@ -102,9 +172,6 @@
                     android:background="#D20C0D"
                     android:orientation="horizontal" />
             </HorizontalScrollView>
-
-
-
 
 
         </LinearLayout>
