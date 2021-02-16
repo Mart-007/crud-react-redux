@@ -238,7 +238,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi2(), "/StickersCategory1");
-      getSticker(ApiService.fetchApi2(), "/StickersCategory1");
+
 
 
     }
@@ -255,7 +255,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi3(), "/StickersCategory2");
-      getSticker(ApiService.fetchApi3(), "/StickersCategory2");
+
 
 
     }
@@ -270,7 +270,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi2(), "/StickersCategory3");
-      getSticker(ApiService.fetchApi2(), "/StickersCategory3");
+
 
 
     }
@@ -284,7 +284,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi2(), "/StickersCategory4");
-      getSticker(ApiService.fetchApi2(), "/StickersCategory4");
+
 
 
     }
@@ -299,7 +299,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi2(), "/StickersCategory5");
-      getSticker(ApiService.fetchApi2(), "/StickersCategory5");
+
 
 
     }
@@ -313,7 +313,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi2(), "/StickersCategory6");
-      getSticker(ApiService.fetchApi2(), "/StickersCategory6");
+
 
 
     }
@@ -327,7 +327,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
       removeViews();
       changeButtonColor(currentButton);
       getSticker(ApiService.fetchApi2(), "/StickersCategory7");
-      getSticker(ApiService.fetchApi2(), "/StickersCategory7");
+
 
 
     }
@@ -365,7 +365,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
     "🧆", "🌮", "🌯","🥗", "🥘","🥫", "🍝", "🍜", "🍲", "🍛", "🍣", "🍱", "🥟", "🦪", "🍤","🍙", "🍚", "🍘", "🍥",
     "🥠","🥮","🍢", "🍡", "🍧", "🍨", "🍦", "🥧", "🧁", "🍰", "🎂","🍮", "🍭", "🍬", "🍫", "🍿", "🍩", "🍪",
     "🌰", "🥜", "🍯", "🥛", "🍼", "☕","🍵", "🧃","🥤", "🍶","🍺","🍻", "🥂", "🍷", "🥃", "🍸", "🍹", "🧉", "🍾",
-    "🧊", "🥄", "🍴", "🍽","🥣", "🥡", "🥢", "🧂"};
+    "🧊", "🥄", "🍴", "🍽","🥣"};
 
     removeEmojiViews();
     initEmoji(emojiList);
@@ -377,7 +377,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
     "🤼‍♀","🤼","🤼‍♂","🤸‍♀","🤸","🤸‍♂","🤺", "🤾‍♀","🤾","🤾‍♂","🏌️‍♀","🏌️","🏌️‍♂","🏇","🧘‍♀","🧘","🧘‍♂","🏄‍♀","🏄","🏄‍♂",
     "🏊‍♀","🏊", "🏊‍♂","🤽‍♀","🤽","🤽‍♂","🚣‍♀","🚣","🚣‍♂","🧗‍♀","🧗","🧗‍♂","🚵‍♀","🚵","🚵‍♂","🚴‍♀","🚴","🚴‍♂","🏆", "🥇",
     "🥈","🥉","🏅","🎖","🏵","🎗","🎫","🎟","🎪","🤹","🤹‍♂","🤹‍♀","🎭","🩰","🎨","🎬","🎤","🎧","🎼","🎹","🥁","🎷","🎺",
-    "🎸","🪕","🎻","🎲","🎯", "🎳", "🎮", "🎰","🧩"};
+    "🎸","🪕","🎻","🎲","🎯", "🎳", "🎮"};
 
     removeEmojiViews();
     initEmoji(emojiList);
@@ -496,9 +496,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
         if ((i % 2) == 0) {
           ImageContainer.addView(ImageContainerColumn);
         }
-        if ((i % 3) == 0) {
-          ImageContainer.addView(ImageContainerColumn);
-        }
+
       }
     } catch (Exception e) {
 
