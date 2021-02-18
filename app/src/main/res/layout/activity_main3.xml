@@ -15,11 +15,12 @@
         android:layout_height="183dp"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
-        android:scaleType="centerInside"
+
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerInside"
         app:srcCompat="@drawable/logo_transparent" />
 
     <ImageButton

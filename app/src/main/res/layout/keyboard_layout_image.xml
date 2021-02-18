@@ -230,7 +230,7 @@
                             android:background="#000"
                             android:onClick="myStickers"
 
-                            android:text="LGBTQ"
+                            android:text="My stickers"
                             android:textColor="#FFF" />
 
                         <Button
@@ -269,7 +269,6 @@
                             android:layout_height="wrap_content"
                             android:background="#000"
                             android:onClick="memesStickers"
-
                             android:text="memes"
                             android:textColor="#FFF" />
 
@@ -279,7 +278,6 @@
                             android:layout_height="wrap_content"
                             android:background="#000"
                             android:onClick="kamasutraStickers"
-
                             android:text="kamasutra"
                             android:textColor="#FFF" />
 
@@ -289,9 +287,20 @@
                             android:layout_height="wrap_content"
                             android:background="#000"
                             android:onClick="othersStickers"
-
                             android:text="Others"
                             android:textColor="#FFF" />
+
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent">-->
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_pa rent">-->
+
+
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--                        </androidx.recyclerview.widget.RecyclerView>-->
 
                     </LinearLayout>
                 </HorizontalScrollView>
