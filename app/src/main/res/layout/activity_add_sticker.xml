@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.AddSticker"
-    android:background="@drawable/gradient_red">
-
+   android:background="@color/color.red">
+<!--    android:background="@drawable/gradient_red"-->
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="333dp"
@@ -21,23 +21,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_transparent" />
 
-    <ScrollView
-        android:layout_width="410dp"
-        android:layout_height="596dp"
-        android:layout_marginTop="30dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        android:id="@+id/recyclerView1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
-        <LinearLayout
-            android:id="@+id/sticker_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <!--    <ScrollView-->
+<!--        android:layout_width="410dp"-->
+<!--        android:layout_height="596dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView7">-->
 
-        </LinearLayout>
-    </ScrollView>
+<!--        <LinearLayout-->
+<!--            android:id="@+id/sticker_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+
+
 
 
 
