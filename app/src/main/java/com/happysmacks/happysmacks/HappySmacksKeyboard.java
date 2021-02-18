@@ -1,11 +1,9 @@
 package com.happysmacks.happysmacks;
 
 
-import android.app.ProgressDialog;
 import android.content.ClipDescription;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -25,15 +23,14 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RawRes;
 import androidx.core.content.FileProvider;
 import androidx.core.view.inputmethod.EditorInfoCompat;
 import androidx.core.view.inputmethod.InputConnectionCompat;
 import androidx.core.view.inputmethod.InputContentInfoCompat;
 
+import com.happysmacks.happysmacks.Activities.AddSticker;
 import com.happysmacks.happysmacks.Services.ApiService;
 import com.happysmacks.happysmacks.Services.DirectoryManager;
 import com.happysmacks.happysmacks.Services.ImageSender;
@@ -41,15 +38,7 @@ import com.happysmacks.happysmacks.Services.Preferences;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
-import org.w3c.dom.Text;
-
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -429,6 +418,21 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
     getStickerFromAssets("kamasutra");
   }
 
+  public void addStickers(View view) {
+    System.out.println("print this");
+    System.out.println("print this");
+    System.out.println("print this");
+    try{
+      Intent intent = new Intent(this, AddSticker.class);
+      intent.addFlags( Intent.FLAG_ACTIVITY_NEW_TASK );
+      startActivity(intent);
+    }catch(Exception e){
+      System.out.println(e.toString());
+    }
+
+  }
+
+
 
   private void changeToImageView() {
     if (Preferences.retrievePreferences(getApplicationContext()) == false) {
@@ -537,9 +541,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
         if ((i % 2) == 0) {
           ImageContainer.addView(ImageContainerColumn);
         }
-        if ((i % 3) == 0) {
-          ImageContainer.addView(ImageContainerColumn);
-        }
+
       }
     } catch (Exception e) {
 
@@ -673,7 +675,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
   }
 
   public void changeButtonColor(Button paramButton) {
-    Button button1 = kl.findViewById(R.id.return_to_keys);
+
     Button button2 = kl.findViewById(R.id.myStickers);
     Button button3 = kl.findViewById(R.id.lgbtq);
     Button button4 = kl.findViewById(R.id.mime);
@@ -681,7 +683,7 @@ public class HappySmacksKeyboard extends InputMethodService implements KeyboardV
     Button button6 = kl.findViewById(R.id.memes);
     Button button7 = kl.findViewById(R.id.kamasutra);
     Button button8 = kl.findViewById(R.id.others);
-    Button[] buttons = {button1, button2, button3, button4, button5, button6, button7, button8};
+    Button[] buttons = { button2, button3, button4, button5, button6, button7, button8};
 
     for (Button singleButton : buttons) {
       singleButton.setTextColor(Color.WHITE);

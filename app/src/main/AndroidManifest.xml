@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HappySmacks">
-        <activity android:name=".Activities.DashboardActivity"></activity>
+        <activity android:name=".Activities.AddSticker"></activity>
+        <activity android:name=".Activities.DashboardActivity" />
         <activity
             android:name=".Activities.LoginActivity"
             android:label="@string/title_activity_login"

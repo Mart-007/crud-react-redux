@@ -201,23 +201,36 @@
                         android:orientation="horizontal">
 
 
-                        <Button
+                        <ImageButton
                             android:id="@+id/return_to_keys"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="#000"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:background="@drawable/cancel"
                             android:onClick="showKeys"
-
+                            />
+                        <ImageButton
+                            android:id="@+id/addStickers"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:background="@drawable/plus"
+                            android:onClick="addStickers"
                             android:text="back"
-                            android:textColor="#FFF" />
-                        <!--default tab                        /-->
+                            android:textColor="#000" />
+
                         <Button
                             android:id="@+id/myStickers"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="#D20C0D"
+                            android:background="#000"
                             android:onClick="myStickers"
-                            android:text="My Stickers"
+
+                            android:text="LGBTQ"
                             android:textColor="#FFF" />
 
                         <Button
